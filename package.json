@@ -1,5 +1,5 @@
 {
-  "homepage": "https://xbtamsing.github.io/mywebsite",
+  "homepage": "https://xbtamsing/xbtamsing.github.io/mywebsite",
   "name": "mywebsite",
   "version": "0.1.0",
   "private": true,
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
