@@ -1,0 +1,90 @@
+/* About color palette */
+/* About main styling sets */
+body #about {
+  min-height: 100vh;
+  padding-top: 20vh;
+  z-index: 1;
+}
+
+body #about #intro {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+
+body #about #intro h1 {
+  font-size: 55px;
+}
+
+body #about #intro h2 {
+  font-size: 40px;
+}
+
+body #about #desc {
+  padding-top: 1vh;
+}
+
+body #about #desc .important {
+  color: #e91e63;
+}
+
+body #about #desc h3 {
+  font-size: 26px;
+}
+
+body #about #desc p {
+  font-size: 22px;
+}
+
+body #about #desc p#highlight {
+  color: #e91e63;
+  background-color: rgba(233, 30, 99, 0.1);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 5px 0px 5px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+  body #about #intro h1 {
+    font-size: 50px;
+  }
+  body #about #intro h2 {
+    font-size: 35px;
+  }
+  body #about #desc h3 {
+    font-size: 24px;
+  }
+  body #about #desc p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body #about #intro h1 {
+    font-size: 40px;
+  }
+  body #about #intro h2 {
+    font-size: 26px;
+  }
+  body #about #desc h3 {
+    font-size: 22px;
+  }
+  body #about #desc p {
+    font-size: 18px;
+  }
+  body #about #desc p#highlight {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  body #about #desc p#highlight {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

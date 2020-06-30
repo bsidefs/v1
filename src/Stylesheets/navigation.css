@@ -1,0 +1,87 @@
+/* Navigation UL List color palette */
+/* Navigation UL List main styling sets */
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 101;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+body nav ul li {
+  font-size: 20px;
+  padding: 0px 25px 0px 0px;
+}
+
+body nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+  /*
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 0px;
+                        height: 1px;
+                        border-bottom: 1.5px solid $accent-color;
+                        transition: width 350ms ease;
+                    }
+                    */
+}
+
+body nav ul li a:hover {
+  color: #e91e63;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+  /*
+                        &::after {
+                            width: 6.5rem;
+                            transition: width 350ms ease;
+                        }
+                        */
+}
+
+body nav ul li a.active {
+  color: #e91e63;
+  /*
+                        &::after {
+                            width: 6.5rem;
+                            transition: width 350ms ease;
+                        }
+                        */
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+  body ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  body ul li {
+    margin: 10px 8px 10px 8px !important;
+  }
+  body ul li a:hover::after {
+    display: none !important;
+  }
+  body ul li a.active::after {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=navigation.css.map */

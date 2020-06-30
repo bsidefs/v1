@@ -1,0 +1,80 @@
+/* HamburgerMenu color palette */
+/* HamburgerMenu main styling sets */
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper {
+  display: none;
+  height: 3vh;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div {
+  width: 25px;
+  height: 1px;
+  opacity: 1;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div:nth-child(2) {
+  width: 12.5px;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:first-child {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  background: #e91e63;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:nth-child(3) {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  background: #e91e63;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.closed:nth-child(2) {
+  opacity: 1;
+  -webkit-transform: translateX(12.5px);
+          transform: translateX(12.5px);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.closed:nth-child(3) {
+  display: none;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 576px) {
+  body .navigation-container .nav-wrapper {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .navigation-container .nav-wrapper #hamburger-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=hamburgerMenu.css.map */

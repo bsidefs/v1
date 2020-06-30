@@ -1,0 +1,23 @@
+/* Footer color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$primary-text-color: #CCC;
+
+/* Footer main styling sets */
+body {
+    #footer {
+        #signature-wrapper {
+            display: flex;
+            min-height: 5vh;
+            justify-content: center;
+            align-items: flex-start;
+            z-index: 1;
+            h6 {
+                padding-top: 1px;
+                color: $accent-color;
+                font-size: 12px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

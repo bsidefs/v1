@@ -1,0 +1,23 @@
+/* Footer color palette */
+/* Footer main styling sets */
+body #footer #signature-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 1;
+}
+
+body #footer #signature-wrapper h6 {
+  padding-top: 1px;
+  color: #e91e63;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+/*# sourceMappingURL=footer.css.map */

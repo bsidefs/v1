@@ -1,0 +1,129 @@
+/* Resume color palette */
+/* Resume main styling sets */
+body #resume {
+  min-height: 100vh;
+  padding-top: 10vh;
+  z-index: 1;
+}
+
+body #resume hr {
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 0.55rem 0 0.5rem 0;
+}
+
+body #resume #resume-title {
+  margin-bottom: 1vh;
+}
+
+body #resume #resume-title h1 {
+  font-size: 50px;
+}
+
+body #resume .resume-section {
+  margin-top: 5px;
+}
+
+body #resume .resume-section h3 {
+  font-size: 24px;
+}
+
+body #resume #technical-skills {
+  margin-bottom: 1.5rem;
+}
+
+body #resume #technical-skills .detail p {
+  padding-top: 10px;
+}
+
+body #resume .desc {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #resume .desc p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+body #resume .desc .detail {
+  overflow: auto;
+}
+
+body #resume .desc .level .level-title {
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body #resume .desc .level .level-bar {
+  border-radius: 5px;
+  background-color: rgba(233, 30, 99, 0.6);
+  padding-top: 4px;
+  -webkit-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+}
+
+body #resume .desc .minor {
+  font-size: 13px;
+}
+
+body #resume .desc .row {
+  margin-top: 2.5px;
+}
+
+body #resume .desc div.full-hover:hover p {
+  color: #FFFFFF;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+body #resume .desc div.full-hover:hover .level span {
+  color: #FFFFFF;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+body #resume .desc div.full-hover:hover .level .level-bar {
+  background-color: #e91e63;
+  -webkit-transition: background-color 350ms ease;
+  transition: background-color 350ms ease;
+}
+
+body #resume .desc p.partial-hover:hover {
+  color: #FFFFFF;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+@media only screen and (max-width: 992px) {
+  body #resume #resume-title h1 {
+    font-size: 42px;
+  }
+  body #resume .resume-section h3 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body #resume #resume-title h1 {
+    font-size: 38px;
+  }
+  body #resume .resume-section h3 {
+    font-size: 20px;
+  }
+  body #resume .desc p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=resume.css.map */

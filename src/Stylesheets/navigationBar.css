@@ -1,0 +1,57 @@
+/* NavigationBar color palette */
+/* NavigationBar main styling sets */
+body .navigation-container {
+  height: 8vh;
+  position: fixed;
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transition: all 0.35s cubic-bezier(0.65, 0, 0.4, 0.5);
+  transition: all 0.35s cubic-bezier(0.65, 0, 0.4, 0.5);
+  z-index: 100;
+  background: #141414;
+  -webkit-backdrop-filter: saturate(200%) blur(20px);
+          backdrop-filter: saturate(200%) blur(20px);
+}
+
+body .navigation-container.hidden {
+  -webkit-transform: translateY(-8vh);
+          transform: translateY(-8vh);
+  -webkit-transition: all 0.35s cubic-bezier(0.6, 0.5, 0.35, 1);
+  transition: all 0.35s cubic-bezier(0.6, 0.5, 0.35, 1);
+}
+
+body .navigation-container.shown {
+  -webkit-box-shadow: 0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.2rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+  background: rgba(20, 20, 20, 0.7);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transition: all 0.35s cubic-bezier(0.65, 0, 0.4, 0.5);
+  transition: all 0.35s cubic-bezier(0.65, 0, 0.4, 0.5);
+}
+
+body .navigation-container .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  body .navigation-container .nav-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .navigation-container .nav-wrapper nav {
+    overflow: auto;
+  }
+}
+/*# sourceMappingURL=navigationBar.css.map */

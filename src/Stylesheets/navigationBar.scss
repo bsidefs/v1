@@ -1,0 +1,56 @@
+/* NavigationBar color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$background: #141414;
+$primary-text-color: #CCC;
+
+/* NavigationBar main styling sets */
+body {
+    .navigation-container {
+        height: 8vh;
+        position: fixed;
+        transform: translateY(0vh);
+        transition: all 0.35s cubic-bezier(0.65, 0.00, 0.40, 0.50);
+        z-index: 100;
+        background: $background;
+        backdrop-filter: saturate(200%) blur(20px);
+        &.hidden {
+            transform: translateY(-8vh);
+            transition: all 0.35s cubic-bezier(0.60, 0.50, 0.35, 1.00);
+        }
+        &.shown {
+            box-shadow: 0.2rem 0.5rem 0.3rem rgba($color: #000000, $alpha: 0.2);
+            background: rgba($color: #141414, $alpha: 0.7);
+            transform: translateY(0vh);
+            transition: all 0.35s cubic-bezier(0.65, 0.00, 0.40, 0.50);            
+        }
+        .nav-wrapper {
+            display: flex;
+            height: 8vh;
+            justify-content: flex-end;
+            //flex-wrap: nowrap;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+    body {
+        .navigation-container {
+            .nav-wrapper {
+                justify-content: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    body {
+        .navigation-container {
+            .nav-wrapper {
+                nav {
+                    overflow: auto;
+                }
+            }
+        }
+    }
+}

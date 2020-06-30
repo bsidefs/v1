@@ -1,0 +1,44 @@
+/* SideMenu color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$background: #141414;
+$primary-text-color: #CCC;
+
+/* SideMenu main styling sets */
+body {
+    #side-menu-wrapper {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 30vh;
+        //z-index: 99;
+        min-height: 100vh;
+        position: absolute;
+        right: 0px;
+        background-color: rgba(25, 25, 25, 1);
+        //transform: translateX(100vh);
+        //transition: all cubic-bezier(0.60, 0.50, 0.35, 1.00);
+        .showing { // default option for now for showing it.
+            transform: translateX(0vh);
+            transition: all cubic-bezier(0.60, 0.50, 0.35, 1.00);
+        }
+        nav {
+            display: flex;
+            ul {
+                flex-direction: column !important;
+                li {
+                    font-size: 25px;
+                    padding: 0px 0px 30px 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    body {
+        #side-menu-wrapper {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+/* Navigation UL List color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$background: #141414;
+$primary-text-color: #CCC;
+
+/* Navigation UL List main styling sets */
+body {
+    nav {
+        display: flex;
+        align-items: center;
+        z-index: 101;
+        ul {
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+            li {
+                font-size: 20px;
+                padding: 0px 25px 0px 0px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    transition: color 350ms ease;
+                    &:hover {
+                        color: $accent-color;
+                        text-decoration: none;
+                        transition: color 350ms ease;
+                        /*
+                        &::after {
+                            width: 6.5rem;
+                            transition: width 350ms ease;
+                        }
+                        */
+                    }
+                    /*
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 0px;
+                        height: 1px;
+                        border-bottom: 1.5px solid $accent-color;
+                        transition: width 350ms ease;
+                    }
+                    */
+                    &.active {
+                        color: $accent-color;
+                        /*
+                        &::after {
+                            width: 6.5rem;
+                            transition: width 350ms ease;
+                        }
+                        */
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+    body {
+        ul {
+            padding-inline-start: 0;
+            flex-direction: row !important;
+            li {
+                margin: 10px 8px 10px 8px !important;
+                a {
+                    &:hover {
+                        &::after {
+                            display: none !important;
+                        }
+                    }
+                    &.active {
+                        &::after {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

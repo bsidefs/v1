@@ -1,0 +1,74 @@
+/* HamburgerMenu color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$background: #141414;
+$primary-text-color: #CCC;
+
+/* HamburgerMenu main styling sets */
+body {
+    .navigation-container {
+        .nav-wrapper {
+            #hamburger-menu-wrapper {
+                display: none;
+                height: 3vh;
+                div {
+                    width: 25px;
+                    height: 1px;
+                    opacity: 1;
+                    position: relative;
+                    background: $white;
+                    border-radius: 5px;
+                    transform: rotate(0deg);
+                    transition: all 0.3s linear;
+                    // z-index for the hamburger divs is already applied through or by the navigation container with its z-index of 100.
+                    &:nth-child(2) {
+                        width: 12.5px;
+                    }
+                    &.opened {
+                        &:first-child {
+                            transform: rotateZ(45deg);
+                            background: $accent-color;
+                            transition: all 0.4s ease;
+                        }
+                        &:nth-child(2) {
+                            opacity: 0;
+                            transform: translateX(25px);
+                            transition: all 0.4s ease;
+                        }
+                        &:nth-child(3) {
+                            transform: rotateZ(-45deg);
+                            background: $accent-color;
+                            transition: all 0.4s ease;
+                        }
+                    }
+                    &.closed {
+                        &:nth-child(2) {
+                            opacity: 1;
+                            transform: translateX(12.5px);
+                            transition: all 0.4s linear;
+                        }
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 576px) {
+    body {
+        .navigation-container {
+            .nav-wrapper {
+                justify-content: flex-end !important;
+                align-items: center;
+                #hamburger-menu-wrapper {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/* About color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$primary-text-color: #CCC;
+
+/* About main styling sets */
+body {
+    #about {
+        min-height: 100vh;
+        padding-top: 20vh;
+        z-index: 1;
+        #intro {
+            display: inline-block;
+            margin-bottom: 17px;
+            h1 {
+                font-size: 55px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+        #desc {
+            padding-top: 1vh;
+            .important {
+                color: $accent-color;
+            }
+            h3 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 22px;
+            }
+            p#highlight {
+                color: $accent-color;
+                background-color: rgba($color: #e91e63, $alpha: 0.1);
+                border-radius: 5px;
+                //max-width: 585px;
+                display: flex;
+                justify-content: center;
+                padding: 0px 5px 0px 5px;
+            }
+        }
+    }
+}
+
+// --- ADDITIONALS ---
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+    body {
+        #about{
+            #intro {
+                h1 {
+                    font-size: 50px;
+                }
+                h2 {
+                    font-size: 35px;
+                }
+            }
+          #desc {
+              h3 {
+                  font-size: 24px;
+              }
+              p {
+                  font-size: 20px;
+              }
+          }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        #about {
+            #intro {
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 26px;
+                }
+            }
+            #desc {
+                h3 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                p#highlight {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 592px) {
+    body {
+        #about {
+            #desc {
+                p#highlight {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

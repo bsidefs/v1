@@ -1,0 +1,289 @@
+/* Contact color palette */
+/* Contact main styling sets */
+body #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+body #contact #contact-title {
+  text-align: center;
+}
+
+body #contact #contact-title h1 {
+  font-size: 50px;
+}
+
+body #contact form {
+  margin-top: 10px;
+}
+
+body #contact form fieldset #sender-information {
+  max-width: 450px;
+}
+
+body #contact form fieldset #sender-information input {
+  width: 100%;
+  background: none;
+  margin: 20px 0px 0px 0px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+}
+
+body #contact form fieldset #sender-information input:hover {
+  border-color: #e91e63;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+}
+
+body #contact form fieldset #sender-information input:focus {
+  outline: none;
+  border-color: #e91e63;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+}
+
+body #contact form fieldset #sender-information input::-webkit-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-information input:-ms-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-information input::-ms-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-information input::placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-information input::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body #contact form fieldset #sender-information input::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body #contact form fieldset #sender-message {
+  max-width: 450px;
+}
+
+body #contact form fieldset #sender-message textarea {
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  background-color: #141414;
+  margin: 35px 0px 35px 0px;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+  resize: none;
+}
+
+body #contact form fieldset #sender-message textarea:hover {
+  border-color: #e91e63;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+}
+
+body #contact form fieldset #sender-message textarea:focus {
+  outline: none;
+  border-color: #e91e63;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+}
+
+body #contact form fieldset #sender-message textarea::-webkit-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-message textarea:-ms-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-message textarea::-ms-input-placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-message textarea::placeholder {
+  color: rgba(204, 204, 204, 0.7);
+}
+
+body #contact form fieldset #sender-message textarea::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body #contact form fieldset #sender-message textarea::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body #contact form fieldset #form-submit {
+  max-width: 450px;
+}
+
+body #contact form fieldset #form-submit input {
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 100%;
+  background: transparent;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+  -webkit-box-shadow: inset 0px 0 0 0 #e91e63;
+          box-shadow: inset 0px 0 0 0 #e91e63;
+  -webkit-transition: -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s, -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+body #contact form fieldset #form-submit input:hover {
+  border-color: #e91e63;
+  -webkit-transition: border-color 350ms ease;
+  transition: border-color 350ms ease;
+  -webkit-box-shadow: inset 415px 0 0 0 #e91e63;
+          box-shadow: inset 415px 0 0 0 #e91e63;
+  -webkit-transition: -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s, -webkit-box-shadow 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+body #contact form fieldset #form-submit input:focus {
+  outline: none;
+}
+
+body #contact #toast-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  padding: 25px 45px 25px 45px;
+}
+
+body #contact #toast-location .toast {
+  width: 250px;
+  height: 80px;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0) !important;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+
+body #contact #toast-location .toast .toast-header {
+  color: #FFFFFF;
+  background-color: rgba(35, 35, 35, 0.8);
+}
+
+body #contact #toast-location .toast .toast-header small {
+  color: #e91e63;
+}
+
+body #contact #toast-location .toast .toast-header button {
+  color: #CCC;
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+body #contact #toast-location .toast .toast-header button:hover {
+  -webkit-animation: swing 0.7s infinite;
+          animation: swing 0.7s infinite;
+}
+
+body #contact #toast-location .toast .toast-header button:focus {
+  outline: none;
+}
+
+body #contact #toast-location .toast .toast-body {
+  color: #FFFFFF;
+  background-color: rgba(28, 28, 28, 0.8);
+}
+
+@media only screen and (max-width: 992px) {
+  body #contact #contact-title h1 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body #contact #contact-title h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body #contact form {
+    margin-top: 10px;
+    /*
+                fieldset {
+                    #sender-information input {
+                        width: 95%;
+                    }
+                    #sender-message textarea {
+                        width: 95%;
+                    }
+                    #form-submit input {
+                        width: 95%;
+                    }
+                }
+                */
+  }
+  body #contact #toast-location {
+    padding: 32px 0px 32px 0px;
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

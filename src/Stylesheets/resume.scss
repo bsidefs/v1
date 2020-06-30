@@ -1,0 +1,131 @@
+/* Resume color palette */
+$accent-color: #e91e63;
+$white: #FFFFFF;
+$primary-text-color: #CCC;
+
+/* Resume main styling sets */
+body {
+    #resume {
+        min-height: 100vh;
+        padding-top: 10vh;
+        // just to simulate having the nav bar above it, setting a padding of 8vhs (nav) + 15 (about page paddings worth) worths
+        z-index: 1;
+        hr {
+            border-color: rgba($color: #FFFFFF, $alpha: 0.3);
+            margin: 0.55rem 0 0.5rem 0;
+        }
+        #resume-title {
+            margin-bottom: 1vh;
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .resume-section {
+            margin-top: 5px;
+            h3 {
+                font-size: 24px;
+            }
+        }
+        #technical-skills {
+            .detail {
+                p {
+                    padding-top: 10px;
+                }
+            }
+            margin-bottom: 1.5rem;
+        }
+        .desc {
+            display: block;
+            align-items: center;
+            p {
+                font-size: 16px;
+                color: rgba($color: #FFFFFF, $alpha: 0.4);
+                transition: color 350ms ease;
+            }
+            .detail {
+                overflow: auto;
+            }
+            .level {
+                .level-title {
+                    color: rgba($color: #FFFFFF, $alpha: 0.4);
+                    transition: color 350ms ease;
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .level-bar {
+                    border-radius: 5px;
+                    background-color: rgba($color: #e91e63, $alpha: 0.6);
+                    padding-top: 4px;
+                    transition: background-color 350ms ease;
+                }
+            }
+            .minor {
+                font-size: 13px;
+            }
+            .row {
+                margin-top: 2.5px;
+            }
+            div.full-hover {
+                &:hover {
+                    p {
+                        color: $white;
+                        transition: color 350ms ease;
+                    }
+                    .level span {
+                        color: $white;
+                        transition: color 350ms ease;
+                    }
+                    .level .level-bar {
+                        background-color: rgba($color: #e91e63, $alpha: 1);
+                        transition: background-color 350ms ease;
+                    }
+                }
+            }
+            p.partial-hover{
+                &:hover {
+                    color: $white;
+                    transition: color 350ms ease;
+                }
+            }
+        }
+    }
+}
+// MEDIA QUERIES
+@media only screen and(max-width: 992px) {
+    body {
+        #resume {
+            #resume-title {
+                h1 {
+                    font-size: 42px;
+                }
+            }
+            .resume-section {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 768px) {
+    body {
+        #resume {
+            #resume-title {
+                h1 {
+                    font-size: 38px;
+                }
+            }
+            .resume-section {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+            .desc {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

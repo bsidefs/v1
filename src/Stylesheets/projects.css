@@ -1,0 +1,167 @@
+/* Projects color palette */
+/* Projects main styling sets */
+body #projects {
+  min-height: 100vh;
+  padding-top: 10vh;
+  z-index: 1;
+}
+
+body #projects #projects-title h1 {
+  font-size: 50px;
+  margin-bottom: 5vh;
+}
+
+body #projects .project {
+  border-radius: 5px;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  margin-right: 5px;
+  margin-bottom: 10px;
+  min-height: 60vh;
+  background-color: rgba(28, 28, 28, 0.8);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+body #projects .project .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #projects .project:hover {
+  -webkit-transform: translateY(-1.5vh);
+          transform: translateY(-1.5vh);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body #projects .project span.divider {
+  color: rgba(204, 204, 204, 0.8);
+}
+
+body #projects .project .project-title .project-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body #projects .project .project-title .project-link svg {
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+body #projects .project .project-title .project-link svg:hover {
+  color: rgba(233, 30, 99, 0.8) !important;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
+}
+
+body #projects .project .project-title h3 {
+  padding-top: 5px;
+  font-size: 28px;
+  color: rgba(233, 30, 99, 0.8);
+}
+
+body #projects .project .project-title h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body #projects .project .project-info h4 {
+  font-size: 17.5px;
+  color: rgba(204, 204, 204, 0.8);
+}
+
+body #projects .project .project-software h4 {
+  font-size: 20px;
+  color: #e91e63;
+}
+
+body #projects .project h3:hover, body #projects .project h4:hover, body #projects .project p:hover {
+  cursor: default;
+}
+
+@media only screen and (max-width: 992px) {
+  body #projects #projects-title h1 {
+    font-size: 42px;
+  }
+  body #projects .project .project-title h3 {
+    font-size: 22px;
+  }
+  body #projects .project .project-title h4 {
+    font-size: 18px;
+  }
+  body #projects .project .project-title .project-link svg {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+  body #projects .project .project-info h4 {
+    font-size: 14.5px;
+  }
+  body #projects .project .project-software h4 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body #projects #projects-title h1 {
+    font-size: 38px;
+  }
+  body #projects .project {
+    min-height: 45vh;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0.5rem 0.5rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  }
+  body #projects .project:hover {
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+  body #projects .project .project-title h3 {
+    font-size: 26px;
+  }
+  body #projects .project .project-title h4 {
+    font-size: 20px;
+  }
+  body #projects .project .project-title .project-link svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  body #projects .project .project-info h4 {
+    font-size: 16px;
+  }
+  body #projects .project .project-software h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body #projects .project .project-title h3 {
+    font-size: 24px;
+  }
+  body #projects .project .project-title h4 {
+    font-size: 18px;
+  }
+  body #projects .project .project-info h4 {
+    font-size: 15px;
+  }
+  body #projects .project .project-software h4 {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

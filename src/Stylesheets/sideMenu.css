@@ -1,0 +1,54 @@
+/* SideMenu color palette */
+/* SideMenu main styling sets */
+body #side-menu-wrapper {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 30vh;
+  min-height: 100vh;
+  position: absolute;
+  right: 0px;
+  background-color: #191919;
+}
+
+body #side-menu-wrapper .showing {
+  -webkit-transform: translateX(0vh);
+          transform: translateX(0vh);
+  -webkit-transition: all cubic-bezier(0.6, 0.5, 0.35, 1);
+  transition: all cubic-bezier(0.6, 0.5, 0.35, 1);
+}
+
+body #side-menu-wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #side-menu-wrapper nav ul {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+body #side-menu-wrapper nav ul li {
+  font-size: 25px;
+  padding: 0px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 576px) {
+  body #side-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=sideMenu.css.map */
