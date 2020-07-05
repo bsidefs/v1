@@ -14,9 +14,6 @@ body {
                 position: relative;
                 z-index: 120;
                 transition: all 350ms ease;
-                &:hover div {
-                    background: $accent-color;
-                }
                 div {
                     width: 25px;
                     height: 1px;

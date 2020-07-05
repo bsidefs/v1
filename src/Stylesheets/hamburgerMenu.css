@@ -9,10 +9,6 @@ body .navigation-container .nav-wrapper #hamburger-menu-wrapper {
   transition: all 350ms ease;
 }
 
-body .navigation-container .nav-wrapper #hamburger-menu-wrapper:hover div {
-  background: #e91e63;
-}
-
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div {
   width: 25px;
   height: 1px;

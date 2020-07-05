@@ -9,10 +9,16 @@ function SideMenu(props) {
     var body = document.body;
     if (props.status === 'opened')
     {
-        body.classList.add("no-scroll")
+        body.classList.add("no-scroll");
+        document.ontouchmove = function(e) {
+            e.preventDefault();
+        }
     }
     else {
-        body.classList.remove("no-scroll")
+        body.classList.remove("no-scroll");
+        document.ontouchmove = function(e) {
+            return true;
+        }
     }
     return(
         <Container className={'side-menu-wrapper ' + props.status }>
