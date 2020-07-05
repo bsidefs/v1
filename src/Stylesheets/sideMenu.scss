@@ -6,25 +6,28 @@ $primary-text-color: #CCC;
 
 /* SideMenu main styling sets */
 body {
-    #side-menu-wrapper {
-        display: none;
+    .side-menu-wrapper {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 30vh;
-        //z-index: 99;
+        max-width: 100%;
         min-height: 100vh;
         position: absolute;
+        z-index: 110;
+        top: 0px;
         right: 0px;
-        background-color: rgba(25, 25, 25, 1);
-        //transform: translateX(100vh);
-        //transition: all cubic-bezier(0.60, 0.50, 0.35, 1.00);
-        .showing { // default option for now for showing it.
-            transform: translateX(0vh);
-            transition: all cubic-bezier(0.60, 0.50, 0.35, 1.00);
+        background-color: $background;
+        &.opened {
+            transform: translateY(0vh);
+            transition: all 0.35s ease;
+        }
+        &.closed {
+            transform: translateY(-150vh);
+            transition: all 0.35s ease;
         }
         nav {
-            display: flex;
+            display: flex !important;
             ul {
                 flex-direction: column !important;
                 li {
@@ -32,13 +35,6 @@ body {
                     padding: 0px 0px 30px 0px;
                 }
             }
-        }
-    }
-}
-@media only screen and (max-width: 576px) {
-    body {
-        #side-menu-wrapper {
-            display: flex;
         }
     }
 }

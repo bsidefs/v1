@@ -14,9 +14,7 @@ class Resume extends React.Component {
                     </Col>
                 </Row>
                     {/* education // no column necessary?*/}
-                {/* must be constrained because min height of 100vh is set and working and will still work even with this,
-                    but that is the whole main point - it will take up more after the fact when we add work in. so it'll take up
-                        more than 100vh which is fine and obviously still working but we dont want it at any more lol lmao mannnn....
+                {/*
                 <Row className="resume-section" id="work">
                     <Col>
                         <Row className="header">
@@ -35,9 +33,9 @@ class Resume extends React.Component {
                                     </Col>
                                     <Col className="detail">
                                         <p>Web Content Assistant (SEO) - <br></br>
-                                            <span className="minor">Analyzed over 200+ static 
-                                                pages/blogs using SEO tools to strengthen website silos and improve site-wide link 
-                                                equity
+                                            <span className="minor">Revised over 200+ static 
+                                                pages/blogs using SEO tools, strengthening website silos and improving site-wide link 
+                                                equity, particularly for the search term "SEO"
                                             </span>
                                         </p>
                                     </Col>

@@ -7,7 +7,7 @@ $primary-text-color: #CCC;
 /* NavigationBar main styling sets */
 body {
     .navigation-container {
-        height: 8vh;
+        min-height: 8vh;
         position: fixed;
         transform: translateY(0vh);
         transition: all 0.35s cubic-bezier(0.65, 0.00, 0.40, 0.50);
@@ -26,7 +26,7 @@ body {
         }
         .nav-wrapper {
             display: flex;
-            height: 8vh;
+            min-height: 8vh;
             justify-content: flex-end;
             //flex-wrap: nowrap;
         }
@@ -48,7 +48,7 @@ body {
         .navigation-container {
             .nav-wrapper {
                 nav {
-                    overflow: auto;
+                    display: none;
                 }
             }
         }

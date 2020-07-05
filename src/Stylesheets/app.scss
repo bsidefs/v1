@@ -28,7 +28,7 @@ body {
             color: $accent-color;
             animation: cursorBlink 0.7s infinite;
         }
-        h1, h2, h3, h4, h6, p, span, a, strong, small, .toast-body {
+        * {
             &::selection {
                 background-color: rgba($color: #FFFFFF, $alpha: 0.1);
             }

@@ -5,29 +5,24 @@ import '../Stylesheets/sideMenu.css';
 import Navigation from './Navigation';
 
 // --- SIDE MENU ---
-class SideMenu extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            opened: this.props.opened
-        };
+function SideMenu(props) {
+    var body = document.body;
+    if (props.status === 'opened')
+    {
+        body.classList.add("no-scroll")
     }
-    render() {
-        if (this.props.opened) {
-            return(
-                <Container id="side-menu-wrapper">
-                    <Row>
-                        <Col>
-                            <Navigation />
-                        </Col>
-                    </Row>
-                </Container>
-            );
-        }
-        else {
-            return null;
-        }
+    else {
+        body.classList.remove("no-scroll")
     }
+    return(
+        <Container className={'side-menu-wrapper ' + props.status }>
+            <Row>
+                <Col>
+                    <Navigation setStatus={props.setStatus} />
+                </Col>
+            </Row>
+        </Container>
+    )
 }
 
 export default SideMenu;

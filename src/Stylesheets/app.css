@@ -34,11 +34,11 @@ body .App .cursor {
           animation: cursorBlink 0.7s infinite;
 }
 
-body .App h1::-moz-selection, body .App h2::-moz-selection, body .App h3::-moz-selection, body .App h4::-moz-selection, body .App h6::-moz-selection, body .App p::-moz-selection, body .App span::-moz-selection, body .App a::-moz-selection, body .App strong::-moz-selection, body .App small::-moz-selection, body .App .toast-body::-moz-selection {
+body .App *::-moz-selection {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-body .App h1::selection, body .App h2::selection, body .App h3::selection, body .App h4::selection, body .App h6::selection, body .App p::selection, body .App span::selection, body .App a::selection, body .App strong::selection, body .App small::selection, body .App .toast-body::selection {
+body .App *::selection {
   background-color: rgba(255, 255, 255, 0.1);
 }
 

@@ -1,7 +1,7 @@
 /* NavigationBar color palette */
 /* NavigationBar main styling sets */
 body .navigation-container {
-  height: 8vh;
+  min-height: 8vh;
   position: fixed;
   -webkit-transform: translateY(0vh);
           transform: translateY(0vh);
@@ -34,7 +34,7 @@ body .navigation-container .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8vh;
+  min-height: 8vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -51,7 +51,7 @@ body .navigation-container .nav-wrapper {
 
 @media only screen and (max-width: 576px) {
   body .navigation-container .nav-wrapper nav {
-    overflow: auto;
+    display: none;
   }
 }
 /*# sourceMappingURL=navigationBar.css.map */

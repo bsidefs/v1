@@ -2,7 +2,15 @@
 /* HamburgerMenu main styling sets */
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper {
   display: none;
-  height: 3vh;
+  height: 26px;
+  position: relative;
+  z-index: 120;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+body .navigation-container .nav-wrapper #hamburger-menu-wrapper:hover div {
+  background: #e91e63;
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div {
@@ -11,11 +19,11 @@ body .navigation-container .nav-wrapper #hamburger-menu-wrapper div {
   opacity: 1;
   position: relative;
   background: #FFFFFF;
+  -webkit-transform-origin: 1px;
+          transform-origin: 1px;
   border-radius: 5px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div:nth-child(2) {
@@ -23,8 +31,8 @@ body .navigation-container .nav-wrapper #hamburger-menu-wrapper div:nth-child(2)
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:first-child {
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: #e91e63;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -32,15 +40,17 @@ body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:first
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:nth-child(2) {
   opacity: 0;
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background: #e91e63;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.opened:nth-child(3) {
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background: #e91e63;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -55,7 +65,7 @@ body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.closed:nth-c
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper div.closed:nth-child(3) {
-  display: none;
+  opacity: 0;
 }
 
 body .navigation-container .nav-wrapper #hamburger-menu-wrapper:focus {

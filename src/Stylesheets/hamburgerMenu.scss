@@ -10,33 +10,40 @@ body {
         .nav-wrapper {
             #hamburger-menu-wrapper {
                 display: none;
-                height: 3vh;
+                height: 26px;
+                position: relative;
+                z-index: 120;
+                transition: all 350ms ease;
+                &:hover div {
+                    background: $accent-color;
+                }
                 div {
                     width: 25px;
                     height: 1px;
                     opacity: 1;
                     position: relative;
                     background: $white;
+                    transform-origin: 1px;
                     border-radius: 5px;
-                    transform: rotate(0deg);
-                    transition: all 0.3s linear;
-                    // z-index for the hamburger divs is already applied through or by the navigation container with its z-index of 100.
+                    transition: all 0.4s ease;
                     &:nth-child(2) {
                         width: 12.5px;
                     }
                     &.opened {
                         &:first-child {
-                            transform: rotateZ(45deg);
+                            transform: rotate(45deg);
                             background: $accent-color;
                             transition: all 0.4s ease;
                         }
                         &:nth-child(2) {
                             opacity: 0;
-                            transform: translateX(25px);
-                            transition: all 0.4s ease;
+                            transform: rotate(360deg);
+                            background: $accent-color;
+                            transition: all 0.1s ease;
                         }
                         &:nth-child(3) {
-                            transform: rotateZ(-45deg);
+                            opacity: 1;
+                            transform: rotate(-45deg);
                             background: $accent-color;
                             transition: all 0.4s ease;
                         }
@@ -48,7 +55,7 @@ body {
                             transition: all 0.4s linear;
                         }
                         &:nth-child(3) {
-                            display: none;
+                            opacity: 0;
                         }
                     }
                 }
