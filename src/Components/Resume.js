@@ -14,7 +14,6 @@ class Resume extends React.Component {
                     </Col>
                 </Row>
                     {/* education // no column necessary?*/}
-                {/*
                 <Row className="resume-section" id="work">
                     <Col>
                         <Row className="header">
@@ -33,9 +32,8 @@ class Resume extends React.Component {
                                     </Col>
                                     <Col className="detail">
                                         <p>Web Content Assistant (SEO) - <br></br>
-                                            <span className="minor">Revised over 200+ static 
-                                                pages/blogs using SEO tools, strengthening website silos and improving site-wide link 
-                                                equity, particularly for the search term "SEO"
+                                            <span className="minor">Using professional SEO tools, analyzed over 200+ static/blog pages and strengthened website silos and improved 
+                                            site-wide link equity.
                                             </span>
                                         </p>
                                     </Col>
@@ -45,7 +43,6 @@ class Resume extends React.Component {
                     </Col>
                 </Row>
                 <hr />
-                */}
                 <Row className="resume-section" id="education">
                     <Col>
                         <Row className="header">
@@ -119,46 +116,23 @@ class Resume extends React.Component {
                                     </Row>
                                     <Row className="tech-skills">
                                         <Col className="detail full-hover">
-                                            <p>Bootstrap</p>
-                                            <div className="level" style={{width: "50%"}}>
-                                                <span className="level-title">50%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>PHP</p>
-                                            <div className="level" style={{width: "25%"}}>
-                                                <span className="level-title">25%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
-                                        </Col>
-                                        <Col className="detail full-hover">
                                             <p>React</p>
                                             <div className="level" style={{width: "25%"}}>
                                                 <span className="level-title">25%</span>
                                                 <div className="level-bar"></div>
                                             </div>
                                         </Col>
-                                    </Row>
-                                    <Row className="tech-skills">
                                         <Col className="detail full-hover">
                                             <p>Swift</p>
-                                            <div className="level" style={{width: "25%"}}>
-                                                <span className="level-title">25%</span>
+                                            <div className="level" style={{width: "50%"}}>
+                                                <span className="level-title">50%</span>
                                                 <div className="level-bar"></div>
                                             </div>
                                         </Col>
                                         <Col className="detail full-hover">
-                                            <p>Firebase</p>
-                                            <div className="level" style={{width: "25%"}}>
-                                                <span className="level-title">25%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>Git</p>
-                                            <div className="level" style={{width: "25%"}}>
-                                                <span className="level-title">25%</span>
+                                            <p>C</p>
+                                            <div className="level" style={{width: "50%"}}>
+                                                <span className="level-title">50%</span>
                                                 <div className="level-bar"></div>
                                             </div>
                                         </Col>
@@ -168,25 +142,25 @@ class Resume extends React.Component {
                         </Col>
                     </Row>
                     <hr />
-                    {/* other skills and soft skills */}
+                    {/* other skills / interests? */}
                     <Row className="resume-section" id="soft-skills">
                         <Col>
                             <Row className="header">
                                 <Col>
-                                    <h3>Soft Skills</h3>
+                                    <h3>Interests</h3>
                                 </Col>
                             </Row>
                             <Row className="desc">
                                 <Col>
                                     <Row className="soft-skills">
                                         <Col className="detail">
-                                            <p className="partial-hover">Attention to Detail</p>
+                                            <p className="partial-hover">Music Production</p>
                                         </Col>
                                         <Col className="detail">
-                                            <p className="partial-hover">Team Focused</p>
+                                            <p className="partial-hover">Film Photography & Videography</p>
                                         </Col>
                                         <Col className="detail">
-                                            <p className="partial-hover">Problem Solving and Critical Thinking</p>
+                                            <p className="partial-hover">Skateboarding</p>
                                         </Col>
                                     </Row>
                                 </Col>

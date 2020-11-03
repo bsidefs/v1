@@ -12,11 +12,63 @@ class Projects extends React.Component {
             <Container id="projects" className="main-content-wrapper">
                 <Row>
                     <Col id="projects-title">
-                        <h1>Projects.<span className="cursor">|</span></h1>
+                        <h1>Recent Projects.<span className="cursor">|</span></h1>
                     </Col>
                 </Row>
                 <Row style={{paddingLeft: '15px'}}>
-                    {/* --- SPARTANDRIVE iOS APPLICATION -- */}
+                    {/* --- GITHUB FOLLOWERS -- */}
+                    <Col sm={12} md={4}>
+                        <Row className="project">
+                            <Col className="desc">
+                                <Row>
+                                    <Col className="project-title">
+                                        <Row>
+                                            <Col>
+                                                <h3>GitHubFollowers</h3>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col xs={12} sm={6}>
+                                                <h4>iOS</h4>
+                                            </Col>
+                                            <Col xs={12} sm={6} className="project-link">
+                                                <a href="https://github.com/xbtamsing/GitHubFollowers" rel="noopener noreferrer" target="_blank">
+                                                    <IconContext.Provider value={{ color: "#FFFFFFE6", size: "1.3rem" }}>
+                                                        <div>
+                                                            <FaGithub />
+                                                        </div>
+                                                    </IconContext.Provider>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="project-info">
+                                        <h4>&bull; Personal project.
+                                        </h4>
+                                        <h4>
+                                            &bull; An iOS application that allows searching profiles on GitHub to 
+                                            view user follower information.
+                                        </h4>
+                                        <h4>
+                                            &bull; This information ranges from a user's username, 
+                                            name, and bio, to public repo, public gist, follower, and following statistics.
+                                        </h4>
+                                        <h4>
+                                            &bull; Developed as part of an iOS course.
+                                        </h4>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="project-software">
+                                        <h4>Swift <span className="divider">/ </span> GitHub API</h4>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Col>
+                    {/* --- SPARTANDRIVE -- */}
                     <Col sm={12} md={4}>
                         <Row className="project">
                             <Col className="desc">
@@ -58,7 +110,7 @@ class Projects extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col className="project-software">
-                                        <h4>Swift <span className="divider">/ </span> Firebase API</h4>
+                                        <h4>Swift <span className="divider">/ </span> Firebase</h4>
                                     </Col>
                                 </Row>
                             </Col>
@@ -110,56 +162,6 @@ class Projects extends React.Component {
                                         <h4>HTML <span className="divider">/ </span> CSS <span className="divider">/ </span>
                                          JS <span className="divider">/ </span> PHP <span className="divider">/ </span>
                                           MySQL</h4>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Col>
-                    {/* --- RESTAURANT GRAUTUITY WEB APP -- */}
-                    <Col sm={12} md={4}>
-                        <Row className="project">
-                            <Col className="desc">
-                                <Row>
-                                    <Col className="project-title">
-                                        <Row>
-                                            <Col>
-                                                <h3>Gratuity Calculator</h3>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col xs={12} sm={6}>
-                                                <h4>Web</h4>
-                                            </Col>
-                                            <Col xs={12} sm={6} className="project-link">
-                                                <a href="https://github.com/aryankhadiri/GratuityApplication" rel="noopener noreferrer" target="_blank">
-                                                    <IconContext.Provider value={{ color: "#FFFFFFE6", size: "1.3rem" }}>
-                                                        <div>
-                                                            <FaGithub />
-                                                        </div>
-                                                    </IconContext.Provider>
-                                                </a>
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col className="project-info">
-                                        <h4>&bull; Collaborative project. Application aimed at expediting nightly end-of-shift
-                                            grautuity calculations for Chelokababi Restaurant in Sunnyvale, CA.
-                                        </h4>
-                                        <h4>
-                                            &bull; Built and designed the entire front-end.
-                                        </h4>
-                                        <h4>
-                                            &bull; Assisted the team with back-end forms, models, 
-                                            and views, written in Django.
-                                        </h4>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col className="project-software">
-                                        <h4>HTML <span className="divider">/ </span> CSS <span className="divider">/ </span>
-                                         JS <span className="divider">/ </span> Python <span className="divider">/ </span> Django</h4>
                                     </Col>
                                 </Row>
                             </Col>
