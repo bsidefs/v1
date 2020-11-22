@@ -53,7 +53,7 @@ class Projects extends React.Component {
                                         </h4>
                                         <h4>
                                             &bull; This information ranges from a user's username, 
-                                            name, and bio, to public repo, public gist, follower, and following statistics.
+                                            name, and bio, to public repo, public gist, follower, and following counts.
                                         </h4>
                                         <h4>
                                             &bull; Developed as part of an iOS course.
@@ -62,7 +62,57 @@ class Projects extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col className="project-software">
-                                        <h4>Swift <span className="divider">/ </span> GitHub API</h4>
+                                        <h4>Swift <span className="divider">/</span> <br/> GitHub API</h4>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Col>
+                    {/* --- STATIFY -- */}
+                    <Col sm={12} md={4}>
+                        <Row className="project">
+                            <Col className="desc">
+                                <Row>
+                                    <Col className="project-title">
+                                        <Row>
+                                            <Col>
+                                                <h3>Statify</h3>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col xs={12} sm={6}>
+                                                <h4>iOS</h4>
+                                            </Col>
+                                            <Col xs={12} sm={6} className="project-link">
+                                                <a href="https://github.com/xbtamsing/Statify" rel="noopener noreferrer" target="_blank">
+                                                    <IconContext.Provider value={{ color: "#FFFFFFE6", size: "1.3rem" }}>
+                                                        <div>
+                                                            <FaGithub />
+                                                        </div>
+                                                    </IconContext.Provider>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="project-info">
+                                        <h4>&bull; Personal project.
+                                        </h4>
+                                        <h4>
+                                            &bull; Small scale application which gives Spotify profile information at a glance.
+                                        </h4>
+                                        <h4>
+                                            &bull; View your playlist, following, and follower counts
+                                        </h4>
+                                        <h4>
+                                            &bull; View your Top Artists and Top Tracks
+                                        </h4>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="project-software">
+                                        <h4>Swift <span className="divider">/</span> <br/> Spotify Web API</h4>
                                     </Col>
                                 </Row>
                             </Col>
@@ -110,58 +160,7 @@ class Projects extends React.Component {
                                 </Row>
                                 <Row>
                                     <Col className="project-software">
-                                        <h4>Swift <span className="divider">/ </span> Firebase</h4>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Col>
-                    {/* --- KMEANS CLUSTERING WEB APP -- */}
-                    <Col sm={12} md={4}>
-                        <Row className="project">
-                            <Col className="desc">
-                                <Row>
-                                    <Col className="project-title">
-                                        <Row>
-                                            <Col>
-                                                <h3>K-Means Clustering App</h3>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col xs={12} sm={6}>
-                                                <h4>Web</h4>
-                                            </Col>
-                                            <Col xs={12} sm={6} className="project-link">
-                                                <a href="https://github.com/xbtamsing/Clustering-Based-Unsupervised-Learning-Web-Application" rel="noopener noreferrer" target="_blank">
-                                                    <IconContext.Provider value={{ color: "#FFFFFFE6", size: "1.3rem" }}>
-                                                        <div>
-                                                            <FaGithub />
-                                                        </div>
-                                                    </IconContext.Provider>
-                                                </a>
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col className="project-info">
-                                        <h4>&bull; Implements a k-means based, clustering ML algorithm for a single,
-                                            one-dimensional dataset.
-                                        </h4>
-                                        <h4>
-                                            &bull; Registered users can cluster their data by specifying the number of clusters
-                                            required and the dataset itself.
-                                        </h4>
-                                        <h4>
-                                            &bull; Scores may be uploaded by either file input or text input.
-                                        </h4>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col className="project-software">
-                                        <h4>HTML <span className="divider">/ </span> CSS <span className="divider">/ </span>
-                                         JS <span className="divider">/ </span> PHP <span className="divider">/ </span>
-                                          MySQL</h4>
+                                        <h4>Swift <span className="divider">/</span> <br/> Firebase API</h4>
                                     </Col>
                                 </Row>
                             </Col>

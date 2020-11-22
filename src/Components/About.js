@@ -19,8 +19,7 @@ class About extends React.Component {
                     <Col md={12} id="desc">
                         <h3>About</h3>
                             <p>
-                                Final year undergraduate student at San Jose State University. I am 
-                                pursuing a Bachelor's Degree in Software Engineering with a Minor in Mathematics. I have an affinity for 
+                                Final year undergraduate student at San Jose State University pursuing a Bachelor's Degree in Software Engineering. I have an affinity for 
                                 minimalist design and a deep passion for Web and Mobile Development.
                             </p>
                             <p>

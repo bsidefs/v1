@@ -60,7 +60,7 @@ class Resume extends React.Component {
                                         <p>San Jose State University</p>
                                     </Col>
                                     <Col className="detail">
-                                        <p>Bachelor of Science in Software Engineering, Minor in Mathematics</p>
+                                        <p>Bachelor of Science in Software Engineering</p>
                                     </Col>
                                 </Row>
                             </Col>
@@ -94,47 +94,24 @@ class Resume extends React.Component {
                                     <Row className="tech-skills">
                                         <Col className="detail full-hover">
                                             <p>HTML/CSS</p>
-                                            <div className="level" style={{width: "75%"}}>
-                                                <span className="level-title">75%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
+                                            {/*  level bar
+                                                <div className="level" style={{width: "75%"}}>
+                                                    <span className="level-title">75%</span>
+                                                    <div className="level-bar"></div>
+                                                </div> 
+                                            */}
                                         </Col>
                                         <Col className="detail full-hover">
                                             <p>Java</p>
-                                            <div className="level" style={{width: "50%"}}>
-                                                <span className="level-title">50%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
                                         </Col>
                                         <Col className="detail full-hover">
                                             <p>JavaScript</p>
-                                            <div className="level" style={{width: "50%"}}>
-                                                <span className="level-title">50%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
                                         </Col>
-                                    </Row>
-                                    <Row className="tech-skills">
                                         <Col className="detail full-hover">
                                             <p>React</p>
-                                            <div className="level" style={{width: "25%"}}>
-                                                <span className="level-title">25%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
                                         </Col>
                                         <Col className="detail full-hover">
                                             <p>Swift</p>
-                                            <div className="level" style={{width: "50%"}}>
-                                                <span className="level-title">50%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>C</p>
-                                            <div className="level" style={{width: "50%"}}>
-                                                <span className="level-title">50%</span>
-                                                <div className="level-bar"></div>
-                                            </div>
                                         </Col>
                                     </Row>
                                 </Col>
