@@ -5,7 +5,6 @@ import '../Stylesheets/socialBar.css';
 import { IconContext } from "react-icons";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { FiInstagram } from 'react-icons/fi';
 
 // --- SOCIAL BAR ---
 class SocialBar extends React.Component {
@@ -25,14 +24,6 @@ class SocialBar extends React.Component {
                             <IconContext.Provider value={{ color: "#CCC", size: "1.3rem" }}>
                             <div>
                                 <FaLinkedinIn />
-                            </div>
-                            </IconContext.Provider>
-                        </a>
-                    </li>
-                    <li><a href="https://www.instagram.com/briantamsing/" rel="noopener noreferrer" target="_blank">
-                            <IconContext.Provider value={{ color: "#CCC", size: "1.3rem" }}>
-                            <div>
-                                <FiInstagram />
                             </div>
                             </IconContext.Provider>
                         </a>

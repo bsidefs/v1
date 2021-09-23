@@ -15,7 +15,7 @@ class Footer extends React.Component {
                 <Row>
                     <Col md={12} id="signature-wrapper">
                         <footer>
-                            <h6>&copy; 2020 made with React by Brian Tamsing.</h6>
+                            <h6>&copy; 2021 made with React by Brian Tamsing.</h6>
                         </footer>
                     </Col>
                 </Row>

@@ -32,8 +32,8 @@ class Resume extends React.Component {
                                     </Col>
                                     <Col className="detail">
                                         <p>Web Content Assistant (SEO) - <br></br>
-                                            <span className="minor">Using professional SEO tools, analyzed over 200+ static/blog pages and strengthened website silos and improved 
-                                            site-wide link equity.
+                                            <span className="minor">
+                                                Analyzed 200+ webpages/blogs using professional tools and applied SEO principles, such as siloing, to strengthen keyword-based themes and demonstrate topic expertise to search engines.
                                             </span>
                                         </p>
                                     </Col>
@@ -93,25 +93,29 @@ class Resume extends React.Component {
                                 <Col>
                                     <Row className="tech-skills">
                                         <Col className="detail full-hover">
+                                            <p>Swift</p>
+                                        </Col>
+
+                                        <Col className="detail full-hover">
+                                            <p>Objective-C</p>
+                                        </Col>
+
+                                        <Col className="detail full-hover">
+                                            <p>Java</p>
+                                        </Col>
+                                        
+                                        <Col className="detail full-hover">
+                                            <p>JavaScript</p>
+                                        </Col>
+
+                                        <Col className="detail full-hover">
                                             <p>HTML/CSS</p>
-                                            {/*  level bar
+                                            {/* level bar
                                                 <div className="level" style={{width: "75%"}}>
                                                     <span className="level-title">75%</span>
                                                     <div className="level-bar"></div>
                                                 </div> 
                                             */}
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>Java</p>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>JavaScript</p>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>React</p>
-                                        </Col>
-                                        <Col className="detail full-hover">
-                                            <p>Swift</p>
                                         </Col>
                                     </Row>
                                 </Col>
